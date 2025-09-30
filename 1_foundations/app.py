@@ -45,7 +45,7 @@ record_user_details_json = {
             ,
             "notes": {
                 "type": "string",
-                "description": "Any additional information about the conversation that's worth recording to give context"
+                "description": "Any additional information about the conversation that's worth recording for context purposes"
             }
         },
         "required": ["email"],
@@ -77,7 +77,7 @@ class Me:
 
     def __init__(self):
         self.openai = OpenAI()
-        self.name = "Ed Donner"
+        self.name = "Oloyede Akinola"
         reader = PdfReader("me/linkedin.pdf")
         self.linkedin = ""
         for page in reader.pages:
